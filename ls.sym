@@ -11,11 +11,11 @@
 00000000 .debug_loc
 00000000 .debug_ranges
 00000000 ls.c
-00000df4 buf.1100
+00000df4 buf.1102
 00000000 ulib.c
 00000000 printf.c
 00000660 printint
-00000acc digits.1089
+00000acc digits.1091
 00000000 umalloc.c
 00000e04 freep
 00000e08 base
@@ -47,6 +47,7 @@
 00000000 main
 00000370 strcmp
 0000061b dup
+00000653 getReadCount
 000004e0 stat
 00000df4 _edata
 00000e10 _end

@@ -6088,13 +6088,15 @@ SYSCALL(getHello)
     3a2a:	c3                   	ret    
 
 00003a2b <getProcCount>:
+SYSCALL(getProcCount)
     3a2b:	b8 17 00 00 00       	mov    $0x17,%eax
     3a30:	cd 40                	int    $0x40
     3a32:	c3                   	ret    
-    3a33:	66 90                	xchg   %ax,%ax
-    3a35:	66 90                	xchg   %ax,%ax
-    3a37:	66 90                	xchg   %ax,%ax
-    3a39:	66 90                	xchg   %ax,%ax
+
+00003a33 <getReadCount>:
+    3a33:	b8 18 00 00 00       	mov    $0x18,%eax
+    3a38:	cd 40                	int    $0x40
+    3a3a:	c3                   	ret    
     3a3b:	66 90                	xchg   %ax,%ax
     3a3d:	66 90                	xchg   %ax,%ax
     3a3f:	90                   	nop

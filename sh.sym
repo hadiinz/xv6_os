@@ -12,11 +12,11 @@
 00000000 .debug_loc
 00000000 .debug_ranges
 00000000 sh.c
-00001940 buf.1127
+00001940 buf.1129
 00000000 ulib.c
 00000000 printf.c
 00000e50 printint
-00001358 digits.1089
+00001358 digits.1091
 00000000 umalloc.c
 000019a4 freep
 000019a8 base
@@ -66,6 +66,7 @@
 00000e0b dup
 000003f0 pipecmd
 000003a0 redircmd
+00000e43 getReadCount
 00000cd0 stat
 00001936 _edata
 000019b0 _end
