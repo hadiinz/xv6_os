@@ -7,7 +7,9 @@
         "defs.h": "c",
         "user.h": "c",
         "x86.h": "c",
-        "types.h": "c"
+        "types.h": "c",
+        "spinlock.h": "c",
+        "mmu.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
