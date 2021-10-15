@@ -22,4 +22,5 @@
 #define SYS_close  21
 #define SYS_getHello 22
 #define SYS_getProcCount 23
+#define SYS_getReadCount 24
 

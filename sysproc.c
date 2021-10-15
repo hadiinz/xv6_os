@@ -100,3 +100,8 @@ int
 sys_getProcCount(){
   return getProcCount();
 }
+
+int 
+sys_getReadCount(){
+  return getReadCount();
+}

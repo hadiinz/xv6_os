@@ -25,6 +25,7 @@ int sleep(int);
 int uptime(void);
 int getHello(void);
 int getProcCount(void);
+int getReadCount(void);
 
 // ulib.c
 int stat(const char*, struct stat*);

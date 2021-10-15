@@ -8,5 +8,6 @@
         "user.h": "c",
         "x86.h": "c",
         "types.h": "c"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }

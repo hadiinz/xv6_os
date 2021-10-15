@@ -20,22 +20,21 @@ int main(void){
   12:	83 ec 04             	sub    $0x4,%esp
     getHello();
   15:	e8 29 03 00 00       	call   343 <getHello>
-    printf(1,"successful hello\n");
+    printf(1,"successful hello\n"); 
   1a:	83 ec 08             	sub    $0x8,%esp
   1d:	68 78 07 00 00       	push   $0x778
   22:	6a 01                	push   $0x1
   24:	e8 e7 03 00 00       	call   410 <printf>
+    fork();
+  29:	e8 6d 02 00 00       	call   29b <fork>
     getProcCount();
-  29:	e8 1d 03 00 00       	call   34b <getProcCount>
+  2e:	e8 18 03 00 00       	call   34b <getProcCount>
     exit();
-  2e:	e8 70 02 00 00       	call   2a3 <exit>
-  33:	66 90                	xchg   %ax,%ax
-  35:	66 90                	xchg   %ax,%ax
-  37:	66 90                	xchg   %ax,%ax
-  39:	66 90                	xchg   %ax,%ax
-  3b:	66 90                	xchg   %ax,%ax
-  3d:	66 90                	xchg   %ax,%ax
-  3f:	90                   	nop
+  33:	e8 6b 02 00 00       	call   2a3 <exit>
+  38:	66 90                	xchg   %ax,%ax
+  3a:	66 90                	xchg   %ax,%ax
+  3c:	66 90                	xchg   %ax,%ax
+  3e:	66 90                	xchg   %ax,%ax
 
 00000040 <strcpy>:
 #include "user.h"

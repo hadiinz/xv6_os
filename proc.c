@@ -543,12 +543,18 @@ int
 getProcCount(void){
   int procCount = 0;
   struct proc *p;
+  
   for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
-    if(p->state == UNUSED) 
+    if(p->state != UNUSED) 
         procCount++;
   }
-
+  cprintf("my proc state : %d\n", myproc()->state);
   cprintf("procCount is : %d\n",procCount);
   return procCount;
+}
 
+int
+getReadCount(void){
+
+  return 0;
 }

@@ -130,6 +130,7 @@ static int (*syscalls[])(void) = {
 [SYS_close]   sys_close,
 [SYS_getHello]   sys_hello,
 [SYS_getProcCount] sys_getProcCount,
+[SYS_getReadCount] sys_getReadCount,
 };
 
 void
