@@ -7,8 +7,6 @@
 #include "mmu.h"
 #include "proc.h"
 
-extern int readCount;
-
 int
 sys_fork(void)
 {
@@ -92,18 +90,27 @@ sys_uptime(void)
   return xticks;
 }
 
+int
+sys_getHelloWorld(void)
+{ 
+  
+  return getHelloWorld();
+}
+int
+sys_thread_create(void)
+{
+  //  stackptr is stack_pointer
+  int stackptr = 0;
+  if(argint(0, &stackptr) < 0)
+    return -1;
+
+  return thread_create((void*) stackptr);
+}
 
 int
-sys_hello(){
-  return getHello();
+sys_thread_wait(void)
+{
+  return thread_wait();
 }
 
-int
-sys_getProcCount(){
-  return getProcCount();
-}
 
-int 
-sys_getReadCount(){
-  return getReadCount();
-}
